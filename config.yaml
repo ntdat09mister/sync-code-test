@@ -1,0 +1,12 @@
+sync_git:
+  repos:
+    - name: test-change-remote
+      trigger_job: test-change-remote	
+      git: "git@github.com:ntdat09mister/test-change-remote.git"
+      git_cred: "9b879e72-0bd6-47e7-89be-9df54955af26"
+      git_branch: "main"
+      remote_git: "git@gitlab.com:ntdat09mister/test-change-remote.git"
+      remote_git_cred: "lenovo@Danny"
+      branch_mapping:
+        - src: "main"
+          des: "main"
