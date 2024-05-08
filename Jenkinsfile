@@ -6,7 +6,7 @@ pipeline {
         stage('Pull from github') {
             steps {
                 script {
-                    config = readYaml file: 'test-change-remote/config.yaml'
+                    config = readYaml file: 'sync-code-test/config.yaml'
                     pull_git(config.sync_git, config.sync_git.repos)
                 }
             }
